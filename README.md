@@ -31,5 +31,17 @@ ansible-playbook ./provision/initial.yml -i ./provision/inventories/vagrant/host
 ### Installing Kubernetetes Dependencies
 
 ```shell
-ansible-playbook ./provision/initial.yml -i ./provision/inventories/vagrant/hosts.yml
+ansible-playbook ./provision/kube-dependencies.yml -i ./provision/inventories/vagrant/hosts.yml
+```
+
+### Setting Up the Master Node
+
+```shell
+ansible-playbook ./provision/master.yml -i ./provision/inventories/vagrant/hosts.yml
+```
+
+### Setting Up the Worker Nodes
+
+```shell
+ansible-playbook ./provision/workers.yml -i ./provision/inventories/vagrant/hosts.yml
 ```
