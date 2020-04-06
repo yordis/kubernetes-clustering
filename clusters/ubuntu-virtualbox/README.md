@@ -1,11 +1,30 @@
+# Ubuntu with Virtualbox
+
+This is an example on how to create a Kubernetes cluster using Ubuntu and
+Virtualbox.
 
 ## Get Started
 
+Make sure to run all the commands from the right folder
+
+```shell
+cd <repo-root>/clusters/ubuntu-virtualbox
+```
+
 ### Create virtual machines
+
+We will use Vagrant to setup 3 virtual machines, 1 master node and 2 worker
+nodes.
 
 ```shell
 vagrant up
 ```
+
+Now you have 3 virtual machines available:
+
+- **192.168.50.4:** Master Node
+- **192.168.50.5:** Worker Node 1
+- **192.168.50.6:** Worker Node 2
 
 ### Add IPs to ssh known hosts
 
