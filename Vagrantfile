@@ -1,9 +1,7 @@
 # frozen_string_literal: true
 
 Vagrant.configure('2') do |config|
-  # config.vm.provision 'ansible' do |ansible|
-  #   ansible.playbook = './ansible/provision.yml'
-  # end
+  config.ssh.forward_agent = true
 
   config.vm.define :master_node, primary: true do |master_node|
     master_node.vm.hostname = 'k8smaster.local'
