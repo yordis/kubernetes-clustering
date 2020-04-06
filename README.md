@@ -1,16 +1,31 @@
 # Kubernetes Clustering
 
+Example of setting up Kubernetes clusters.
+
 ## Requirements
 
-Install the following tools in your compute:
+- MacOS: Operation System
+- **Homebrew:** https://brew.sh/ install multiple tools
+- **Vagrant:** https://www.vagrantup.com/ virtual machine provisioning
+- **VirtualBox:** https://www.virtualbox.org/ for virtualization
+- **Ansible:** https://www.ansible.com/ for Operation System provisioning
 
-- **Vagrant:** https://www.vagrantup.com/
-- **VirtualBox:** https://www.virtualbox.org/
-- **Ansible:** https://www.ansible.com/
+### Install Homebrew
+
+```shell
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+```
+
+### Install Homebrew packages
 
 ```shell
 brew cask install vagrant
 brew cask install virtualbox
+```
+
+### Install Ansible
+
+```shell
 pip3 install --user ansible
 ```
 
