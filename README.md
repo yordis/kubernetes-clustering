@@ -21,3 +21,9 @@ pip3 install --user ansible
 ```shell
 vagrant up
 ```
+
+### Creating a Non-Root User on All Remote Servers
+
+```shell
+ansible-playbook ./provision/initial.yml -i ./provision/inventories/vagrant/hosts.yml
+```
