@@ -14,10 +14,10 @@
   become: yes
   tasks:
     - debug:
-        msg: "{{ hostvars['master_one'].join_command }}"
+        msg: "{{ hostvars['master'].join_command }}"
 
     - name: join cluster
-      shell: "{{ hostvars['master_one'].join_command }} >> node_joined.txt"
+      shell: "{{ hostvars['master'].join_command }} >> node_joined.txt"
       become: yes
       register: node_joined
       args:
