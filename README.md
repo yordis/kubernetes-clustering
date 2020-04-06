@@ -27,3 +27,9 @@ vagrant up
 ```shell
 ansible-playbook ./provision/initial.yml -i ./provision/inventories/vagrant/hosts.yml
 ```
+
+### Installing Kubernetetes Dependencies
+
+```shell
+ansible-playbook ./provision/initial.yml -i ./provision/inventories/vagrant/hosts.yml
+```
