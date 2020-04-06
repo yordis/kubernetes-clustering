@@ -1,4 +1,4 @@
-# Kubernetes From Scratch
+# Kubernetes Clustering
 
 ## Requirements
 
