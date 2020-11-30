@@ -2,6 +2,10 @@
 
 Example of setting up Kubernetes clusters.
 
+> This is not an intent to be production ready, please consider
+> the usage of https://github.com/ilkilab/agorakube in
+> production instead.
+
 ## Requirements
 
 These may be the list of required tools to run all the examples:
